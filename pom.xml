@@ -14,6 +14,7 @@
         <module>lyq-common</module>
         <module>lyq-admin</module>
         <module>lyq-site</module>
+        <module>lyq-spider</module>
     </modules>
 
 </project>
