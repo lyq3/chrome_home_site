@@ -8,5 +8,10 @@
     <artifactId>lyq-common</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <parent>
+        <groupId>com.lyq3</groupId>
+        <artifactId>chrome-home-site</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
 </project>
