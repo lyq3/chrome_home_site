@@ -37,35 +37,3 @@ spring:
 #            max-wait: -1      # 连接池最大阻塞等待时间（使用负值表示没有限制）
 #            max-idle: 10      # 连接池中的最大空闲连接
 #            min-idle: 5       # 连接池中的最小空闲连接
-    datasource:
-        type: com.alibaba.druid.pool.DruidDataSource
-        driverClassName: com.mysql.jdbc.Driver
-        url: jdbc:mysql://119.23.252.177:3306/weixin?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
-        username: root
-        password: 92932266
-        druid:
-            initial-size: 10
-            max-active: 100
-            min-idle: 10
-            max-wait: 60000
-            pool-prepared-statements: true
-            max-pool-prepared-statement-per-connection-size: 20
-            time-between-eviction-runs-millis: 60000
-            min-evictable-idle-time-millis: 300000
-            validation-query: SELECT 1 FROM DUAL
-            test-while-idle: true
-            test-on-borrow: false
-            test-on-return: false
-            stat-view-servlet:
-                enabled: true
-                url-pattern: /druid/*
-                #login-username: admin
-                #login-password: admin
-            filter:
-                stat:
-                    log-slow-sql: true
-                    slow-sql-millis: 1000
-                    merge-sql: true
-                wall:
-                    config:
-                        multi-statement-allow: true
