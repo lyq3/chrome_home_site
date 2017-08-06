@@ -28,7 +28,6 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <shiro.version>1.4.0</shiro.version>
-        <mybatisplus-spring-boot-starter.version>1.0.4</mybatisplus-spring-boot-starter.version>
         <fastjson.version>1.2.31</fastjson.version>
         <commons.io.version>2.5</commons.io.version>
         <velocity.version>1.7</velocity.version>
@@ -77,11 +76,11 @@
         <artifactId>spring-boot-starter-test</artifactId>
         <scope>test</scope>
     </dependency>
-    <dependency>
+   <!-- <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-devtools</artifactId>
         <optional>true</optional>
-    </dependency>
+    </dependency>-->
 
     <!--  Dubbo 依赖 -->
         <dependency>
@@ -116,13 +115,6 @@
             <artifactId>zkclient</artifactId>
             <version>${zkclient.version}</version>
         </dependency>
-
-        <!--mybatis-plus-->
-    <dependency>
-        <groupId>com.baomidou</groupId>
-        <artifactId>mybatisplus-spring-boot-starter</artifactId>
-        <version>${mybatisplus-spring-boot-starter.version}</version>
-    </dependency>
 
 
         <!--Shiro权限框架-->
@@ -209,32 +201,5 @@
     </dependency>
 
 </dependencies>
-
-<build>
-<finalName>chrome_home_site</finalName>
-<plugins>
-    <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.1</version>
-        <configuration>
-            <source>1.7</source>
-            <target>1.7</target>
-            <encoding>UTF8</encoding>
-            <compilerArguments>
-                <extdirs>src\main\webapp\WEB-INF\lib</extdirs>
-            </compilerArguments>
-        </configuration>
-    </plugin>
-    <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>2.2</version>
-        <configuration>
-            <archiveClasses>false</archiveClasses>
-        </configuration>
-    </plugin>
-</plugins>
-</build>
 
 </project>
