@@ -1,5 +1,7 @@
 package com.lyq3.vo;
 
+import com.baomidou.mybatisplus.annotations.TableName;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -8,6 +10,7 @@ import java.util.Date;
  * @author lyq
  * 日期：2017/8/6
  */
+@TableName("user")
 public class User implements Serializable{
     /**用户ID*/
     private Integer id;
