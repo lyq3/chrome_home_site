@@ -1,10 +1,10 @@
 package com.lyq3.service;
 
 import com.lyq3.api.UserService;
-import com.alibaba.dubbo.config.annotation.Service;
 import com.lyq3.mapper.UserMapper;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.alibaba.dubbo.config.annotation.Service;
 import com.lyq3.vo.User;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * 用户Service实现类
