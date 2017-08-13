@@ -1,0 +1,24 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.carousel-img{
+    width: 900px;
+    height: 300px;
+    background-color: red
+}
+.gonggao{
+    text-align: left;
+    line-height: 50px;
+    font-size: 14px;
+    color: green;
+}
+.content-page{
+    background-color: #EEEEEE;
+    height: 1000px;
+    width: 1500px
+}
+.header{
+    border-bottom: 1px solid #DDDEE1;
+    background-color: #fff
+}
