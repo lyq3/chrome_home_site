@@ -4,7 +4,9 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.lyq3.api.UserService;
 import com.lyq3.vo.User;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
@@ -22,6 +24,12 @@ public class UserController {
 //    @RequiresUser
     public User test(){
         return userService.getUserById();
+    }
+
+    @RequestMapping("/test2")
+    public String test2(Model model){
+        model.addAttribute("title","1233");
+        return "html/test";
     }
 
 }

@@ -19,6 +19,8 @@ spring:
     http:
         converters:
           preferred-json-mapper: fastjson
+#    thymeleaf:
+#        prefix: classpath:/html/
 #        multipart:
 #            max-file-size: 100MB
 #            max-request-size: 100MB
