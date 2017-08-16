@@ -26,10 +26,10 @@ public class UserController {
         return userService.getUserById();
     }
 
-    @RequestMapping("/test2")
+    @RequestMapping("/index")
     public String test2(Model model){
-        model.addAttribute("title","1233");
-        return "html/test";
+//        model.addAttribute("title","1233");
+        return "html/index";
     }
 
 }

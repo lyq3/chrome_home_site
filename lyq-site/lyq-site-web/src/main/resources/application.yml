@@ -19,7 +19,9 @@ spring:
     http:
         converters:
           preferred-json-mapper: fastjson
-#    thymeleaf:
+    thymeleaf:
+        cache: false
+        mode: LEGACYHTML5
 #        prefix: classpath:/html/
 #        multipart:
 #            max-file-size: 100MB

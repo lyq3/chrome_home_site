@@ -1,0 +1,68 @@
+<div id="header" class="header" style="border-bottom: 1px solid #EEEEEE" th: fragment="header ">
+    <Row>
+        <i-col span = "4" >
+            <i-menu mode="horizontal" :theme="theme1" >
+                <img style="margin-left: 20px" src="http://9idk.com/wp-content/themes/Cui2.0/img/logo.png"/>
+            </i-menu>
+        </i-col>
+        <i-col span = "15">
+            <div id="navbar">
+                <i-menu mode="horizontal" :theme="theme1" active-name="1">
+                    <Menu-item name="1">
+                        <Icon type="ios-paper"></Icon>
+                        首页
+                    </Menu-item>
+                    <Menu-item name="2">
+                        <Icon type="ios-people"></Icon>
+                        资讯
+                    </Menu-item>
+                    <Submenu name="3">
+                        <template slot="title">
+                            <Icon type="stats-bars"></Icon>
+                            Chrome插件
+                        </template>
+                        <Menu-group title="使用">
+                            <Menu-item name="3-1">新增和启动</Menu-item>
+                            <Menu-item name="3-2">活跃分析</Menu-item>
+                            <Menu-item name="3-3">时段分析</Menu-item>
+                        </Menu-group>
+                        <Menu-group title="留存">
+                            <Menu-item name="3-4">用户留存</Menu-item>
+                            <Menu-item name="3-5">流失用户</Menu-item>
+                        </Menu-group>
+                    </Submenu>
+                    <Submenu name="4">
+                        <template slot="title">
+                            <Icon type="stats-bars"></Icon>
+                            Chrome主题
+                        </template>
+                        <Menu-group title="使用">
+                            <Menu-item name="4-1">新增和启动</Menu-item>
+                            <Menu-item name="4-2">活跃分析</Menu-item>
+                            <Menu-item name="4-3">时段分析</Menu-item>
+                        </Menu-group>
+                        <Menu-group title="留存">
+                            <Menu-item name="4-4">用户留存</Menu-item>
+                            <Menu-item name="4-5">流失用户</Menu-item>
+                        </Menu-group>
+                    </Submenu>
+                    <Menu-item name="5">
+                        <Icon type="settings"></Icon>
+                        教程文章
+                    </Menu-item>
+                </i-menu>
+
+            </div>
+        </i-col>
+        <!--搜索框-->
+        <i-col span = "5">
+            <i-menu mode="horizontal" :theme="theme1" >
+                <i-Input v-model="value4" placeholder="请输入关键字" style="width: 70%;">
+
+                </i-Input>
+                <i-Button type="ghost" shape="circle" icon="ios-search">搜索</i-Button>
+            </i-menu>
+        </i-col>
+
+    </Row>
+</div>
