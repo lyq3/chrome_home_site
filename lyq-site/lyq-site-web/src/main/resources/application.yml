@@ -20,6 +20,7 @@ spring:
         converters:
           preferred-json-mapper: fastjson
     thymeleaf:
+        prefix: classpath:/templates/html/
         cache: false
         mode: LEGACYHTML5
 #        prefix: classpath:/html/

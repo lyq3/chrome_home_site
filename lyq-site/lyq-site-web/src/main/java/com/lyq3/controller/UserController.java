@@ -30,7 +30,7 @@ public class UserController {
     @RequestMapping("/index")
     public String test2(Model model){
 //        model.addAttribute("title","1233");
-        return "html/index";
+        return "index";
     }
 
 }
